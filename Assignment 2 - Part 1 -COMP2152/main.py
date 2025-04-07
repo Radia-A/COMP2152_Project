@@ -4,7 +4,7 @@ from monster import Monster
 
 def spawn_adaptive_monsters(hero):
     monsters = [Monster() for _ in range(hero.level)]
-
+    
     for monster in monsters:
         if hero.level < 5:
             monster.health_points = 50
