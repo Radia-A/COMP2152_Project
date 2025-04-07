@@ -1,0 +1,40 @@
+Game Overview:
+The game is a turn-based combat system where a hero battles a monster. The hero and monster have attributes like combat strength and health points. The game includes features like weapon progression, loot collection, and a crafting system.
+
+Key Features:
+1. Character Classes:
+   - Hero: A player character with combat strength and health points.
+   - Monster: An enemy character with combat strength and health points.
+   - Character: A base class for both Hero and Monster, providing common attributes and methods.
+
+2. Weapon Progression:
+   - The hero's weapon upgrades based on the number of monsters killed.
+   - Weapons include Dagger, Sword, Greatsword, and Legendary Blade, each with unique stats.
+   - List comprehension and nested conditionals are used to determine the hero's current weapon.
+
+3. Loot System:
+   - The hero collects loot items like Health Potion, Poison Potion, etc.
+   - Loot can be used to affect the hero's health points.
+
+4. Crafting System:
+   - Allows the hero to craft items using collected loot.
+   - Items have properties like quality and durability.
+
+5. Combat System:
+   - Turn-based combat where the hero and monster take turns attacking.
+   - Dice rolls determine the outcome of attacks and weapon selection.
+
+6. Save/Load System:
+   - The game saves the hero's progress, including monsters killed and weapon upgrades.
+   - The game can load previous progress from a save file.
+
+7. User Interaction:
+   - The game prompts the user for input, such as combat strength and hero name.
+   - It provides feedback on game events, such as weapon upgrades and combat outcomes.
+
+How It Works:
+- The game starts by initializing the hero, monster, and weapon progression system.
+- The hero's weapon is upgraded based on the number of monsters killed, which is read from a save file.
+- The game loop handles user input, dice rolls, combat, and loot collection.
+- The game ends when either the hero or monster is defeated, and the result is saved.
+- The game provides a summary of the hero's performance, including stars earned and the current weapon.
